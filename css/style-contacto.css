@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	min-height: 100vh;
+	background-color: #f5f2ebfa;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-family: "Roboto", sans-serif;
+}
+.encabezado {
+	display:flex;
+	justify-content: center;
+}
+.navbar {
+	padding-bottom: 0;
+}
+.activo {
+	background-color: rgba(216, 216, 216, 0.685);
+}
+.enlaces {
+	font-weight: bold;
+	font-size: 1rem;
+	color: black;
+}
+.navbar-collapse {
+	margin: 10px 0;
+}
+
+.enlaces:hover {
+	color: #2078dd;
+	text-decoration: underline;
+	background-color: rgba(245, 245, 245, 0.507);
+}
+
+.contenedor {
+	display: block;
+	/*background-color: #f5f2ebfa;*/
+	background-color: #f7f7e6;
+    opacity: 0.8;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f7f7e6 11px ), repeating-linear-gradient( #f7ac4555, #f7ac45 );
+	flex-grow: 1;
+	padding-bottom: 10px;
+}
+.contenedor .estructura_contenido {
+	width: 100%;
+}
+/* .contenedor_gral {
+	background-color: white;
+	margin: 10px 0;
+	padding: 10px 0;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+} */
+
+.pie_pagina {
+	background-color: #002b5b;
+	display: flex;
+	flex-direction: column;
+}
+.pie_pagina p {
+	color: white;
+	font-size: 0.75rem;
+	padding: 5px 0;
+	text-align: center;
+	margin: 0;
+}
+
+/* MQ */
+@media screen and (min-width: 575px) {
+	.encabezado {
+		padding: 0;
+		flex-direction: row;
+	}
+	.encabezado_fijo {
+		justify-content: end;
+		padding: 0 10px;
+	}
+
+	.contenedor_gral {
+		margin: 10px;
+		padding: 15px;
+	}
+	.pie_pagina p {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (min-width: 993px) {
+	.navbar {
+		padding-top: 0;
+	}
+	.enlaces {
+		margin: 0 15px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	/* .encabezado, */
+	.contenedor {
+		padding: 0 25px;
+	}
+
+	.contenedor_gral {
+		padding: 20px;
+	}
+
+	.encabezado_fijo img {
+		width: 200px;
+	}
+}
+
+@media screen and (min-width: 1536px) {
+	/* .encabezado, */
+	.contenedor {
+		padding: 0 50px;
+	}
+	.tit_principal {
+		padding: 25px 0;
+		font-size: 3.3rem;
+	}
+	.contenedor_gral {
+		padding: 50px;
+		padding-top: 0px;
+	}
+	
+}
+@media screen and (max-width:575px) {
+	.estructura_contenido{
+		flex-direction: column;
+	}
+}
+/*seccion contacto, titulos.*/
+.titulo{
+    background-color: #2078dd;
+    color: whitesmoke;
+    text-align: center;
+    font-family: "Fjalla One", sans-serif;
+}
+/*direccion,telefono y correo electronico del hospital.*/
+.estructura_contenido{
+    display:grid;
+	grid-template-columns: 1fr 1fr; 
+    /*justify-content: center;
+    align-items: baseline;*/
+}
+/*Formulario de contacto.(usuario)*/
+.contacto-hospital, .formulario-contacto, iframe{
+	border: 1px solid black;
+	border-radius: 1%;
+	padding: 6% 6% 6% 6%;
+	margin: 15%;
+}
+
+
+
