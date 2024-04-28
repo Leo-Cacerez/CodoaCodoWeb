@@ -14,23 +14,17 @@
       crossorigin="anonymous"/>
 
     <!-- CSS General -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style-contacto.css" />
+	    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="../css/style-contacto.css" />
   </head>
   <body>
     <header class="encabezado">
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
         <div class="container-fluid bg-transparent">
           <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
+            class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
@@ -62,20 +56,20 @@
     </header>
 <!--Datos de contacto del Hospital-->
     <main class="contenedor">
-		<h1 class="titulo">CONTACTO</h1>
+      <h1 class="titulo contacto">CONTACTO</h1>
 
       <section class="estructura_contenido">
 		<div class="contacto-hospital">
 			
 		<h3 class="titulo">Contacta con nosotros</h3>
 			<p>
-				<strong>Dirección:</strong>Hospital Eustaquio Aristizábal, Coronel Vidal, Provincia de Buenos Aires</p>
+				<strong>Dirección:</strong> Hospital Eustaquio Aristizábal, Coronel Vidal, Provincia de Buenos Aires</p>
 			<p>
-				<strong>Teléfono:</strong>  (022) 65432332 
+				<strong>Teléfono:</strong> (022) 65432332 
 			</p>
 			<p>
-				<strong>Correo electrónico:</strong>
-				info@hospitallaureles.com.ar
+				<i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <strong>Correo electrónico:</strong> info@hospitallaureles.com.ar
 			</p>
 			<!--Google Maps-->
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d791.871578727193!2d-57.731282230362886!3d-37.44923813356138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959ae14c6b83e50f%3A0xceb88a71527c5e5a!2sHospital%20Eustaquio%20Aristiz%C3%A1bal!5e0!3m2!1ses!2sar!4v1713820251633!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
@@ -83,30 +77,30 @@
 			</iframe>
     </div>
 		<!--Rellenar Formulario por el usuario-->
-<form class="formulario-contacto">
+    <form class="formulario-contacto">
  
-  <h3 class="titulo">Envíanos un mensaje</h3><br>
+      <h3 class="titulo">Envíanos un mensaje</h3><br>
 
-    <span>(Rellena el formulario, dejanos tu mensaje y nos contactaremos contigo.)</span><br>
+      <span>(Rellena el formulario, dejanos tu mensaje y nos contactaremos contigo.)</span><br>
     
    
 
-    <label for="nombre"><strong>Nombres y Apellidos</strong></label><br>
+    <label for="nombre"><strong>Nombres y Apellidos</strong></label>
 		<input type="text" id="nombre" name="nombre" required/><br>
 
 		
-		<label for="email"><strong>E-mail</strong></label><br>
-		<input type="email" id="email" name="email"/><br>
+		<label for="email"><strong>E-mail</strong></label>
+		<input type="email" id="email" name="email" required/><br>
 		
-		<label for="celular"><strong>Celular</strong></label><br>
-		<input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="celular" name="celular"/><br>
+		<label for="celular"><strong>Celular</strong></label>
+		<input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="celular" name="celular" required/><br>
 
-    <label for="mensaje"><strong>Mensaje</strong></label><br>
-		<textarea id="mensaje" name="mensaje" rows="8" cols="50"></textarea><br>
+    <label for="mensaje"><strong>Mensaje</strong></label>
+		<textarea id="mensaje" name="mensaje" rows="8" cols="50" required></textarea><br> 
 
 		<p>Gracias por tu interés.</p>
 
-		<input type="submit" value="Enviar" />
+		<input class="boton-enviar" type="submit" value="Enviar" />
 </form>
 
 	  </section>

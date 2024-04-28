@@ -26,48 +26,38 @@ body {
 .enlaces {
 	font-weight: bold;
 	font-size: 1rem;
-	color: black;
+	color: #3E5151;
 }
 .navbar-collapse {
 	margin: 10px 0;
 }
 
 .enlaces:hover {
-	color: #2078dd;
-	text-decoration: underline;
+	color: #DECBA4;
 	background-color: rgba(245, 245, 245, 0.507);
 }
 
 .contenedor {
-	display: block;
-	/*background-color: #f5f2ebfa;*/
-	background-color: #f7f7e6;
-    opacity: 0.8;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f7f7e6 11px ), repeating-linear-gradient( #f7ac4555, #f7ac45 );
+	/*Background copiado de Ui Gradient*/
+	background: #3E5151;  
+	background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	flex-grow: 1;
-	padding-bottom: 10px;
+	padding-bottom: 1px;
 }
 .contenedor .estructura_contenido {
 	width: 100%;
 }
-/* .contenedor_gral {
-	background-color: white;
-	margin: 10px 0;
-	padding: 10px 0;
-	border-radius: 15px;
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	-ms-border-radius: 15px;
-	-o-border-radius: 15px;
-} */
-
 .pie_pagina {
-	background-color: #002b5b;
+	/*Background copiado de UI Gradient*/
+	background: #3E5151;  
+	background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	display: flex;
 	flex-direction: column;
 }
 .pie_pagina p {
-	color: white;
+	color: whitesmoke;
 	font-size: 0.75rem;
 	padding: 5px 0;
 	text-align: center;
@@ -92,6 +82,7 @@ body {
 	.pie_pagina p {
 		font-size: 1rem;
 	}
+
 }
 
 @media screen and (min-width: 993px) {
@@ -105,9 +96,9 @@ body {
 
 @media screen and (min-width: 1024px) {
 	/* .encabezado, */
-	.contenedor {
+	/*.contenedor {
 		padding: 0 25px;
-	}
+	}*/
 
 	.contenedor_gral {
 		padding: 20px;
@@ -120,9 +111,9 @@ body {
 
 @media screen and (min-width: 1536px) {
 	/* .encabezado, */
-	.contenedor {
+	/*.contenedor {
 		padding: 0 50px;
-	}
+	}*/
 	.tit_principal {
 		padding: 25px 0;
 		font-size: 3.3rem;
@@ -133,37 +124,67 @@ body {
 	}
 	
 }
-@media screen and (max-width:575px) {
-	.estructura_contenido{
-		flex-direction: column;
-		
-	}
-}
+
 /*seccion contacto, titulos.*/
 .titulo{
-    background-color: #2078dd;
-    color: whitesmoke;
+	/*Background copiado de Ui Gradient para los titulos*/
+	background: #3E5151; 
+	background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: whitesmoke;
     text-align: center;
     font-family: "Fjalla One", sans-serif;
+	border-radius: 3px;
+	padding: 1%;
 }
 /*direccion,telefono y correo electronico del hospital.*/
 .estructura_contenido{
-    display:grid;
-	grid-template-columns: 1fr 1fr; 
+	display:flex;
 }
 /*Formulario de contacto.(usuario)*/
 .contacto-hospital, .formulario-contacto{
-	border: 1px solid black;
-	border-radius: 1%;
-	padding: 2% 2% 6% 6%;
-	margin: 2%;
+	border-radius: 5px;
+	padding: 5%;
+	margin: 10%;
 	background-color: #f5f2ebfa;
+	width: 50%;
 }
-iframe{
-	width: 100%;
-	padding: 2%;
-	border-radius: 5%;
-	border:none;
+label,input,textarea,iframe{
+	margin-left: 5%;
+	width: 90%;
+	border-radius: 3px;
 }
-
+/*Centrar boton enviar*/
+.boton-enviar{
+	width: 20%;
+	margin-left: 40%;
+}
+p{
+	margin-left: 5%;
+}
+/* Responsive para celulares.*/
+@media  screen and (max-width:575px) {
+	.encabezado {
+		display: flex;
+		justify-content:start;
+	}
+	.contenedor_gral {
+		margin: 10px;
+		padding: 15px;
+	}
+	.pie_pagina p {
+		font-size: 1rem;
+	}
+	.estructura_contenido {
+    flex-direction: column;
+	}
+	.contacto{
+		margin-top: 5%;
+	}
+    .contacto-hospital,.formulario-contacto {
+		width: 90%;
+		padding: 2%;
+		margin: 5%;
+    }
+}
 
