@@ -28,107 +28,27 @@ body {
 	font-size: 1rem;
 	color: #3E5151;
 }
-.navbar-collapse {
+/*.navbar-collapse {
 	margin: 10px 0;
-}
-
+}*/
 .enlaces:hover {
 	color: #DECBA4;
 	background-color: rgba(245, 245, 245, 0.507);
 }
-
-.contenedor {
-	/*Background copiado de Ui Gradient*/
+/*contenedor main*/
+.contenedor {/*Background copiado de Ui Gradient*/
 	background: #3E5151;  
 	background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	flex-grow: 1;
-	padding-bottom: 1px;
-}
-.contenedor .estructura_contenido {
-	width: 100%;
-}
-.pie_pagina {
-	/*Background copiado de UI Gradient*/
-	background: #3E5151;  
-	background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	}
+/*direccion,telefono y correo electronico del hospital.*/
+.estructura_contenido {/*div*/
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
 }
-.pie_pagina p {
-	color: whitesmoke;
-	font-size: 0.75rem;
-	padding: 5px 0;
-	text-align: center;
-	margin: 0;
-}
-
-/* MQ */
-@media screen and (min-width: 575px) {
-	.encabezado {
-		padding: 0;
-		flex-direction: row;
-	}
-	.encabezado_fijo {
-		justify-content: end;
-		padding: 0 10px;
-	}
-
-	.contenedor_gral {
-		margin: 10px;
-		padding: 15px;
-	}
-	.pie_pagina p {
-		font-size: 1rem;
-	}
-
-}
-
-@media screen and (min-width: 993px) {
-	.navbar {
-		padding-top: 0;
-	}
-	.enlaces {
-		margin: 0 15px;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	/* .encabezado, */
-	/*.contenedor {
-		padding: 0 25px;
-	}*/
-
-	.contenedor_gral {
-		padding: 20px;
-	}
-
-	.encabezado_fijo img {
-		width: 200px;
-	}
-}
-
-@media screen and (min-width: 1536px) {
-	/* .encabezado, */
-	/*.contenedor {
-		padding: 0 50px;
-	}*/
-	.tit_principal {
-		padding: 25px 0;
-		font-size: 3.3rem;
-	}
-	.contenedor_gral {
-		padding: 50px;
-		padding-top: 0px;
-	}
-	
-}
-
-/*seccion contacto, titulos.*/
-.titulo{
-	/*Background copiado de Ui Gradient para los titulos*/
-	background: #3E5151; 
+/*Titulos de seccion y formulario de contacto*/
+.titulo{/*Background copiado de Ui Gradient para los titulos*/
+	background: #3E5151;  
 	background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	color: whitesmoke;
@@ -136,19 +56,24 @@ body {
     font-family: "Fjalla One", sans-serif;
 	border-radius: 3px;
 	padding: 1%;
+	width: 100%;
 }
-/*direccion,telefono y correo electronico del hospital.*/
-.estructura_contenido{
-	display:flex;
-}
-/*Formulario de contacto.(usuario)*/
-.contacto-hospital, .formulario-contacto{
-	border-radius: 5px;
-	padding: 5%;
-	margin: 10%;
+/*Seccion y Formulario de contacto.(usuario)*/
+.seccion-contacto{
+	border-radius: 50px;
+	padding: 3% ;
+	margin: 1% 1% 2% 20%;
 	background-color: #f5f2ebfa;
 	width: 50%;
 }
+.formulario-contacto{
+	border-radius: 50px;
+	padding: 3% ;
+	margin: 1% 20% 2% 1%;
+	background-color: #f5f2ebfa;
+	width: 50%;
+}
+/*atributos del formulario de contactos*/
 label,input,textarea,iframe{
 	margin-left: 5%;
 	width: 90%;
@@ -161,6 +86,16 @@ label,input,textarea,iframe{
 }
 p{
 	margin-left: 5%;
+}
+.pie_pagina {
+	/*Background copiado de UI Gradient*/
+	background: #3E5151;  
+	background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	text-align: center;
+	color: whitesmoke;
+	font-size: 1rem;
+	margin: 0%;
 }
 /* Responsive para celulares.*/
 @media  screen and (max-width:575px) {
@@ -179,12 +114,75 @@ p{
     flex-direction: column;
 	}
 	.contacto{
+		width: 100%;
 		margin-top: 5%;
 	}
-    .contacto-hospital,.formulario-contacto {
+    .seccion-contacto,.formulario-contacto {
 		width: 90%;
-		padding: 2%;
 		margin: 5%;
+		
+		border-radius: 3px;
     }
 }
 
+
+/* MQ 
+@media screen and (min-width: 575px) {
+	.encabezado {
+		padding: 0;
+		flex-direction: row;
+	}
+	.encabezado_fijo {
+		justify-content: end;
+		padding: 0 10px;
+	}
+
+	.contenedor_gral {
+		margin: 10px;
+		padding: 15px;
+	}
+	.pie_pagina p {
+		font-size: 1rem;
+	}
+
+/*
+@media screen and (min-width: 993px) {
+	.navbar {
+		padding-top: 0;
+	}
+	.enlaces {
+		margin: 0 15px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	/* .encabezado, */
+	/*.contenedor {
+		padding: 0 25px;
+	}
+
+	.contenedor_gral {
+		padding: 20px;
+	}
+
+	.encabezado_fijo img {
+		width: 200px;
+	}
+}
+
+@media screen and (min-width: 1536px) {
+	/* .encabezado, */
+	/*.contenedor {
+		padding: 0 50px;
+	}
+	.tit_principal {
+		padding: 25px 0;
+		font-size: 3.3rem;
+	}
+	.contenedor_gral {
+		padding: 50px;
+		padding-top: 0px;
+	}
+	
+}
+*/
