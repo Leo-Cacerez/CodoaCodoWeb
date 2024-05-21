@@ -87,8 +87,8 @@ body {
 /*Seccion y Formulario de contacto.(usuario)*/
 .seccion-contacto, .formulario-contacto{
   border-radius: 10px;
-  padding: 3%;
-  margin:2%;
+  padding: 2%;
+  margin:1%;
   background-color: #f5f2ebfa;
   width: 500px;
   justify-content: center;
@@ -100,7 +100,7 @@ textarea,
 iframe {
   margin-left: 5%;
   width: 90%;
-  border-radius: 3px;
+  border-radius: 10px;
 }
 /*Centrar boton de registro e ingreso*/
 .boton-enviar{
@@ -110,21 +110,11 @@ p {
   margin-left: 5%;
 }
 .pie_pagina {
-  /*Background copiado de UI Gradient*/
-  background: #3e5151;
-  background: -webkit-linear-gradient(
-    to right,
-    #decba4,
-    #3e5151
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #decba4,
-    #3e5151
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  text-align: center;
   color: whitesmoke;
   font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
 }
 /* Responsive para celulares.*/
 @media screen and (max-width: 575px) {
